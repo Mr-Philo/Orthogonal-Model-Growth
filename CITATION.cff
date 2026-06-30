@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper."
+title: "Beyond Sunk Costs: Boosting LLM Pre-training Efficiency via Orthogonal Growth of Mixture-of-Experts"
+authors:
+  - family-names: Wang
+    given-names: Ruizhe
+  - family-names: Ding
+    given-names: Yucheng
+  - family-names: Liu
+    given-names: Xiao
+  - family-names: Wang
+    given-names: Yaoxiang
+  - family-names: Cheng
+    given-names: Peng
+  - family-names: Guo
+    given-names: Baining
+  - family-names: Zha
+    given-names: Zhengjun
+  - family-names: Gong
+    given-names: Yeyun
+preferred-citation:
+  type: article
+  title: "Beyond Sunk Costs: Boosting LLM Pre-training Efficiency via Orthogonal Growth of Mixture-of-Experts"
+  authors:
+    - family-names: Wang
+      given-names: Ruizhe
+    - family-names: Ding
+      given-names: Yucheng
+    - family-names: Liu
+      given-names: Xiao
+    - family-names: Wang
+      given-names: Yaoxiang
+    - family-names: Cheng
+      given-names: Peng
+    - family-names: Guo
+      given-names: Baining
+    - family-names: Zha
+      given-names: Zhengjun
+    - family-names: Gong
+      given-names: Yeyun
+  year: 2025
+  journal: "arXiv preprint arXiv:2510.08008"
+  url: "https://arxiv.org/abs/2510.08008"
+  notes: "Accepted at ICML 2026"
+repository-code: "https://github.com/Mr-Philo/Orthogonal-Model-Growth"
+license: MIT
+keywords:
+  - large language models
+  - mixture of experts
+  - model growth
+  - pre-training efficiency
+  - checkpoint recycling
