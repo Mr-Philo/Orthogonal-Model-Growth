@@ -59,8 +59,11 @@ interposition: l0 l0 l1 l1 l2 l2 l3 l3
 stack:         l0 l1 l2 l3 l0 l1 l2 l3
 ```
 
-`ignore_first` / `ignore_last` leave a number of edge layers un-grown
-(the paper uses 2 on each side for the 3B and 17B runs).
+`ignore_first` / `ignore_last` optionally leave a number of edge layers
+un-grown. Not extensively discussed in the paper for space reasons; the
+defaults are `0` on both sides, and small values like `2` are a
+reasonable starting point if you want to preserve embeddings-/head-adjacent
+layers.
 
 ### `moe_width_growth_state_dict(state_dict, *, num_experts, hidden_size, ...)`
 

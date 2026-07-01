@@ -214,7 +214,7 @@ Key growth flags (full list in
 | `--do-depth-growth` | Duplicate transformer layers. |
 | `--do-moe-width-growth` | Duplicate experts and the router. |
 | `--growth-stack-method {interleaved,stacked}` | `interleaved` = interposition (paper Eq. 2). |
-| `--growth-ignore-first-num-layers N` / `--growth-ignore-last-num-layers N` | Leave edge layers un-grown (paper uses `N=2`). |
+| `--growth-ignore-first-num-layers N` / `--growth-ignore-last-num-layers N` | Optional: leave the first / last `N` source layers un-duplicated. Not extensively discussed in the paper for space reasons; the code defaults to `0` and `N=2` is a reasonable starting point if you want to preserve embeddings-/head-adjacent layers. |
 | `--growth-add-expert-noise` + `--growth-expert-noise-std-scaling-factor 0.01` | Symmetry-breaking perturbation for width growth. |
 
 ## 📝 Citation

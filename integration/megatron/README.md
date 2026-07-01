@@ -87,7 +87,7 @@ see Microsoft's public Megatron fork:
 | `--do-depth-growth` | Run [`model_depth_growth`](Offline_checkpoint_growth.py#L221) — duplicate layers. |
 | `--do-moe-width-growth` | Run [`model_moe_width_growth`](Offline_checkpoint_growth.py#L379) — duplicate experts and double the router. |
 | `--growth-stack-method {interleaved,stacked}` | Paper terminology: `interleaved` = "interposition" (Eq. 2), `stacked` = "stack" (Eq. 1). |
-| `--growth-ignore-first-num-layers N` / `--growth-ignore-last-num-layers N` | Leave the first / last N source layers un-duplicated. The paper uses `N=2` on both sides. |
+| `--growth-ignore-first-num-layers N` / `--growth-ignore-last-num-layers N` | Optional: leave the first / last `N` source layers un-duplicated. Not extensively discussed in the paper for space reasons; the code defaults to `0` and `N=2` is a reasonable starting point if you want to preserve embeddings-/head-adjacent layers. |
 | `--growth-add-expert-noise` | Add the small Gaussian perturbation to copied experts. |
 | `--growth-expert-noise-std-scaling-factor` | The `α` in `N(0, (α · σ_orig)²)`. Paper default: `0.01`. |
 | `--growth-zerofy-output-init` | Zero the output projections of newly copied depth layers (identity-like residual at growth time). |
